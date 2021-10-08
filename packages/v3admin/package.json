@@ -1,6 +1,9 @@
 {
-  "name": "v3admin",
+  "name": "@skuhnow/v3admin",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }
