@@ -8,6 +8,8 @@
       <v-col class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3">
           <span>Welcome to the Vuetify 3 Alpha</span>
+          <span>fsfsfds</span>
+          <va-foo />
         </h1>
 
         <small>Vite Preview</small>
