@@ -2,9 +2,7 @@
   <div>x: {{ foo.state.name }}</div>
   <v-text-field label="Firstname" v-model="foo.firstName" />
   <v-text-field label="Lastname" v-model="foo.lastName" />
-  <div>
-    #{{ foo.firstName }} - {{ foo.lastName }}#
-  </div>
+  <div>#{{ foo.firstName }} - {{ foo.lastName }}#</div>
 </template>
 <script lang="ts">
 import { Options, setup, Vue } from 'vue-class-component';

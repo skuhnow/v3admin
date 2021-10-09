@@ -1,9 +1,11 @@
 {
   "name": "@skuhnow/v3admin",
   "version": "0.0.0",
-  "main": "index.js",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
+  },
+  "scripts": {
+    "build": "vue-cli-service build --name admin --target lib src/index.js"
   }
 }

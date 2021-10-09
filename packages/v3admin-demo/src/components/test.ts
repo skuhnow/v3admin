@@ -1,5 +1,5 @@
 import { reactive, computed, ref } from 'vue';
-import {ComputedRef, Ref, UnwrapRef} from '@vue/reactivity';
+import { ComputedRef, Ref, UnwrapRef } from '@vue/reactivity';
 
 interface State {
   name: string;
@@ -14,8 +14,8 @@ export function test() {
   const lastName: Ref<UnwrapRef<string>> = ref('');
 
   const fullName: ComputedRef<string> = computed(() => {
-    return firstName.value + ' ' + lastName.value
-  })
+    return firstName.value + ' ' + lastName.value;
+  });
 
   function foo() {
     // return 'bar';
@@ -36,6 +36,6 @@ export function test() {
     lastName,
     setFirstName,
     setLastName,
-    fullName
+    fullName,
   };
 }
