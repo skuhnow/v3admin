@@ -4,7 +4,8 @@
   "main": "dist/admin.common.js",
   "module": "src/index.ts",
   "scripts": {
-    "build": "vue-cli-service build --name admin --target lib src/index.ts"
+    "build": "vue-cli-service build --name admin --target lib src/index.ts",
+    "watch": "vue-cli-service build --watch --name admin --target lib src/index.ts"
   },
   "dependencies": {
     "vue-property-decorator": "^9.1.2"
