@@ -1,9 +1,8 @@
-import { App } from "vue";
-import Foo from "./components/Foo.vue"
+import { App } from 'vue'
+import Sidebar from './components/layout/Sidebar.vue'
 
 export default {
   install: (app: App) => {
-    // @ts-ignore
-    app.component(`VaFoo`, Foo);
+    app.component('V3Sidebar', Sidebar)
   },
-};
+}

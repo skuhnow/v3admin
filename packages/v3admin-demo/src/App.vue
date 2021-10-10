@@ -1,14 +1,8 @@
 <template>
   <v-app>
-    <v-navigation-drawer v-model="drawer" app>
-      <v-list nav>
-        <v-list-item link to="/">Home</v-list-item>
-        <v-list-item link to="/about">About</v-list-item>
-        <v-list-item link to="/hello">Hello</v-list-item>
-      </v-list>
-    </v-navigation-drawer>
+    <v3-sidebar v-model="drawer" :menu="sidebarMenu" />
     <v-app-bar app color="primary">
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
     </v-app-bar>
     <v-main>
       <v-container fluid>
@@ -19,10 +13,15 @@
   </v-app>
 </template>
 <script lang="ts">
-import { Options, setup, Vue } from 'vue-class-component';
+import navigation from './navigation'
+import { ref } from 'vue'
 
-@Options({})
-export default class App extends Vue {
-  drawer: boolean = false;
+export default {
+  setup() {
+    const drawer = ref(false)
+    const sidebarMenu = ref(navigation())
+
+    return { sidebarMenu, drawer }
+  },
 }
 </script>
