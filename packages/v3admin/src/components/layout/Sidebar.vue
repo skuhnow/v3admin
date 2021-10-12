@@ -1,7 +1,11 @@
 <template>
   <v-navigation-drawer app :value="value" @input="(v) => $emit('input', v)">
     <v-list nav>
-      <v-list-item v-for="menuItem in menu" link :to="menuItem.link">{{ menuItem.text }}</v-list-item>
+      <v-list-item v-for="menuItem in menu" link :to="menuItem.link">
+        <v-list-item-content>
+          <v-list-item-title v-text="menuItem.text"></v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
     </v-list>
   </v-navigation-drawer>
 </template>

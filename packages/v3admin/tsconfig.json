@@ -4,12 +4,14 @@
     "module": "esnext",
     "strict": true,
     "jsx": "preserve",
+    "declaration": true,
     "importHelpers": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
+    "outDir": "./dist",
     "baseUrl": ".",
     "types": [
       "webpack-env"

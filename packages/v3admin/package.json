@@ -4,13 +4,11 @@
   "main": "dist/admin.common.js",
   "module": "src/index.ts",
   "scripts": {
-    "build": "vue-cli-service build --name admin --target lib src/index.ts",
-    "watch": "vue-cli-service build --watch --name admin --target lib src/index.ts"
-  },
-  "dependencies": {
-    "vue-property-decorator": "^9.1.2"
+    "build": "tsc -b",
+    "watch": "tsc -b -w"
   },
   "devDependencies": {
+    "@babel/types": "^7.15.6",
     "@vue/cli-plugin-typescript": "~4.5.0",
     "typescript": "~4.1.5"
   },

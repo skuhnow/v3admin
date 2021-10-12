@@ -1,11 +1,13 @@
-# V3Admin
+# V3admin
 
-V3Admin is an Admin Framework for Vue.js 3, built with [Vuetify 3](https://next.vuetifyjs.com/). Due to the fact that Vuetify 3 is still in [Alpha](https://next.vuetifyjs.com/en/getting-started/installation/), many features are currently not yet possible.
+V3admin is an Admin Framework for Vue.js 3, built with [Vuetify 3](https://next.vuetifyjs.com/). Due to the fact that Vuetify 3 is still in [Alpha](https://next.vuetifyjs.com/en/getting-started/installation/), many features are currently not yet possible.
 
 # Features
 
+* Completely written in [TypeScript](https://www.typescriptlang.org/)
 * Powered by Vuetify 3 (Currently in alpha)
-* Includes Demo Project which made use of all V3Admin features
+* Includes Demo Project which made use of all V3admin features
+* Demo Project is served by [Vite](https://vitejs.dev/)
 
 # Contributing
 

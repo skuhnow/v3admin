@@ -6,8 +6,8 @@
     </v-app-bar>
     <v-main>
       <v-container fluid>
-        <!-- If using vue-router -->
-        <router-view></router-view>
+          <router-view></router-view>
+          <!-- If using vue-router -->
       </v-container>
     </v-main>
   </v-app>
@@ -18,10 +18,14 @@ import { ref } from 'vue'
 
 export default {
   setup() {
-    const drawer = ref(false)
+    const drawer = ref(true)
     const sidebarMenu = ref(navigation())
 
     return { sidebarMenu, drawer }
   },
+  created() {
+    console.log(this.$admin);
+  }
+
 }
 </script>

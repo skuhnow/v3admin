@@ -4,4 +4,14 @@ export default (): Array<object> => [
     text: 'Dashboard',
     link: '/dashboard',
   },
+  {
+    text: 'Usermanagement',
+    children: [
+      {
+        icon: 'mdi-view-dashboard',
+        text: 'Users',
+        link: '/users',
+      },
+    ],
+  },
 ]
