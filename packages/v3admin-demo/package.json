@@ -1,6 +1,6 @@
 {
   "name": "@skuhnow/v3admin-demo",
-  "version": "0.0.0",
+  "version": "0.0.1-alpha.0",
   "license": "MIT",
   "scripts": {
     "serve": "vite preview",
@@ -14,10 +14,10 @@
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
+    "@skuhnow/v3admin": "^0.0.1-alpha.0",
     "roboto-fontface": "*",
     "vue": "3.2.19",
     "vue-router": "4.0.11",
-    "vuetify": "3.0.0-alpha.11",
-    "@skuhnow/v3admin": "^0.0.0"
+    "vuetify": "3.0.0-alpha.11"
   }
 }
