@@ -1,7 +1,7 @@
 {
   "name": "@skuhnow/v3admin",
   "version": "0.0.1-alpha.1",
-  "main": "dist/admin.common.js",
+  "main": "dist/index.js",
   "module": "src/index.ts",
   "files": [
     "dist/**/*"
